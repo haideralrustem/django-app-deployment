@@ -1,0 +1,1 @@
+web: gunicorn haider_site.wsgi
