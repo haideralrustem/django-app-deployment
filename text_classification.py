@@ -4,12 +4,12 @@
 # piece of text and determine the sentiment behind it.
 
 
-from sklearn.datasets import fetch_20newsgroups
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.pipeline import Pipeline
-from sklearn.linear_model import SGDClassifier
-from sklearn.naive_bayes import MultinomialNB
+# from sklearn.datasets import fetch_20newsgroups
+# from sklearn.feature_extraction.text import CountVectorizer
+# from sklearn.feature_extraction.text import TfidfTransformer
+# from sklearn.pipeline import Pipeline
+# from sklearn.linear_model import SGDClassifier
+# from sklearn.naive_bayes import MultinomialNB
 from statistics import mean
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
