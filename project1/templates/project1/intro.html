@@ -31,11 +31,9 @@
 
 
     <div class="intro-content intro-content1">
-        <p><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">Simple</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">GRAPHER</span>
-            is a tool that lets you generate quick graphs from data. </p>
-            <p>Just upload an Excel file that contains your data, then generate 
-                a graph of your choice based on the data you uploaded.
-        </p>
+        <p><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">Food</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">SUGGESTER</span>
+            is an API tool that suggests a random food dish. </p>
+            
             
     </div>
 
@@ -52,7 +50,10 @@
         function play_button_sound() {
             var audio = document.getElementById("button-audio");
             audio.play();
-            setTimeout(() => window.location.href = '/project1',
+            // old grapher
+            // setTimeout(() => window.location.href = '/project1',
+            // 350);
+            setTimeout(() => window.location.href = '/project1/food_suggester',
             350);
             
         }

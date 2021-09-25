@@ -22,7 +22,7 @@
     
     <!-- img goes here -->
     <div class="welcome-text">
-        Welcome to my Analytical Projects showcase.<br>
+        Welcome to my Projects showcase.<br>
         
     </div>
 
@@ -46,20 +46,22 @@
     <p class="home-subtitle">A list of projects that are focused on computational analysis.</p>
 
     <div class='card-container'>
-        <a href="#">
+        <a href="{% url 'project1:food_suggester' %}">
         
         <div class="card-wrap">
 
             <div class="card-img">
-                <img class="card-img-photo" src="{% static 'images/simple_grapher_thumbnail.png' %}">
+                <img class="card-img-photo" src="{% static 'images/food_thumbnail_mod.png' %}">
             </div>
             <!-- -->
             <div class="card-text-content">
-                <div class="card-text-title"><h4><p><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">Simple</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">GRAPHER</span></h4></div>
+                <div class="card-text-title"><h4><p><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">FOOD</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">SUGGESTER</span></h4></div>
                 <hr>
                 <div class="card-text-body">
-                    <p><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">Simple</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">GRAPHER</span>
-                        is a tool that lets you generate quick graphs from data. </p>
+                    <p><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">Food</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">SUGGESTER</span>
+                        is a tool that uses <a href="https://foodish-api.herokuapp.com/">Foodish API</a> to generate a random food dish.
+                     </p>
+                     <p>Useful for when you need quick food ideas and can't decide</p>
                         
                 </div>
             </div>
@@ -71,7 +73,7 @@
 
         <hr>
 
-    <div class='card-container'>
+    <div class='card-container text-analyzer-card'>
         <a href="#">
             <div class="card-wrap">
 
@@ -97,10 +99,11 @@
         
     <div class="row-vertical">
         <div class="frame-limiter">
+            <a href="{% url 'project1:food_suggester' %}">
             <div class="card-wrap-vertical hover-border">
 
                 <div class="card-img">
-                    <img class="card-img-photo" src="{% static 'images/simple_grapher_thumbnail.png' %}">
+                    <img class="card-img-photo" src="{% static 'images/food_thumbnail_mod.png' %}">
                 </div>
                 <!-- -->
                 <div class="card-text-content">
@@ -117,9 +120,10 @@
                 </div>
                 
             </div>
+            </a>
         </div>
     
-        <div class="frame-limiter ">
+        <div class="frame-limiter text-analyzer-card">
             <div class="card-wrap-vertical hover-border">
 
                 <div class="card-img">

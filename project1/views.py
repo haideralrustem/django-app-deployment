@@ -412,6 +412,11 @@ def generate_plot_get(request):
 
 # Create your views here.
 
+def food_suggester(request):
+    context = {}
+    return render(request, 'project1/food_suggester.html', context)
+
+
 def data_file_upload(request):
        
     global persistent_data_state

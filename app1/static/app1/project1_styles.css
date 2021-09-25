@@ -195,6 +195,36 @@ p.flashes {
 }
 
 
+
+
+/* ................... */
+
+
+.food-img-style {
+  width: 40vw;
+  height: auto;
+  margin-left: 16%;
+  margin-top: 5%;
+  border-radius: 5px;
+}
+#food-button {
+  margin: 10% 1% 5% 1%;
+}
+
+.food-suggester-wrap {
+  margin-left: 10%;
+  margin-top: 12%;
+}
+
+.food-suggester-wrap .header-text {
+  margin-bottom: 10%;
+}
+
+.food-suggester-wrap .file-uploader-title {
+  margin-bottom: 5%;
+}
+
+
 /* ........... File Preview Styles ......... */
 
 .build-tools-card {

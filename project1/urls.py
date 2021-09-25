@@ -9,6 +9,7 @@ urlpatterns = [
     path('/viz', views.main_page_viz, name='main_page'),
     path('/testing', views.testing_page, name='testing_page'),
     path('/intro', views.intro, name='intro'),
+    path('/food_suggester', views.food_suggester, name='food_suggester'),
     
 
     # ajax requests

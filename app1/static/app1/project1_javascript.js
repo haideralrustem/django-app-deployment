@@ -34,9 +34,7 @@ var window_media_query_offset = 17;
 // }
 
 
-window.onbeforeunload = function() {
-    alert("Data will be lost if you refresh the page. Are you sure?") 
-}
+
 
 function line_graph_test(data){
 
