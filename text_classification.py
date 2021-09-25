@@ -155,13 +155,13 @@ def word_frequency(text):
 # ..................................
 
 def delete_prev_word_clouds():
-    static_dir = './app1/static/images/'
+    static_dir = './media'
     files = os.listdir(static_dir)
 
     for f in files:
         if 'word_cloud' in f:
             print(f)
-            os.remove(static_dir + f)
+            os.remove(static_dir+'/' + f)
 
     
 
@@ -180,7 +180,7 @@ def generate_word_cloud(text):
     plt.imshow(wordcloud, interpolation='bilinear')
     plt.axis("off")
 
-    plt.savefig(f'./app1/static/images/{word_cloud_url}')
+    plt.savefig(f'./media/{word_cloud_url}')
     # plt.show()
 
     plt.close()

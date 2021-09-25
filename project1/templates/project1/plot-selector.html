@@ -329,29 +329,6 @@
         // fire button to submit
         $('#select_axis_form .axis-form-button').click();
 
-        // make a get request
-        $.ajax ({
-                type : 'GET',
-                url :  "{% url 'project1:generate_plot_get' %}",
-                data : {'generated_plot_url': generated_plot_url},
-                dataType: 'json',
-                success: function(response) {    
-                   
-                   console.log('\n response from generate_plot: ', response);
-                    let url_redirect = response['url_redirect'];
-                    if (url_redirect) {
-                        window.location.href = url_redirect;
-                    }
-                },
-                error : function(response) {
-                    console.log(' > GET req. FAILED. Response text is: ', response);
-                    
-                    let url_redirect = response['url_redirect'];
-                    if (url_redirect) {
-                        window.location.href = url_redirect;
-                    }
-                }
-            });
     }
 
 // de-clicks
@@ -640,16 +617,19 @@ $.ajax({
         generated_plot_url = response['plot_url'];
         let url_redirect = response['url_redirect'];
 
-
+       
+                    if (url_redirect) {
+                        window.location.href = url_redirect;
+                    }
         
     },
     error: function (response) {
         // alert the error if any error occured
         console.log('error occured! :\n', response);
         console.log(response['responseText'])
-        alert(
-            'An Error has occurred! Please make sure you select the right columns for the slected graphs, and that data is formatted');
-        location.reload();
+        // alert(
+        //     'An Error has occurred! Please make sure you select the right columns for the slected graphs, and that data is formatted');
+        // //location.reload();
     }   
     })
 });

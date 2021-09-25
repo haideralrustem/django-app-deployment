@@ -17,9 +17,9 @@ from matplotlib.ticker import ScalarFormatter
 
 import seaborn as sns
 
+from django.conf import settings
 
-
-static_dir = './app1/static/images/'
+static_dir = './media/'
 
 # data = [{'Category Name': '', 'loss': , 'gain':},
 #         {'Category Name': '', 'loss': , 'gain':},
@@ -159,7 +159,7 @@ def single_scatter_plot(rows, x_name, y_values, dtypes_values=None, trend_line=T
   ts = str(time.time())
   plt.savefig(static_dir + 'generated_plot'+ts+'.png')
   plt.close()
-  return 'generated_plot'+ts+'.png'
+  return  'generated_plot'+ts+'.png'
 
 # ...............................
 
@@ -338,12 +338,12 @@ def bar_chart(rows, x_name, y_values, dtypes_values=None):
 
 def delete_prev_plots():
     
-    files = os.listdir(static_dir)
+    files = os.listdir('./media')
 
     for f in files:
         if 'generated_plot' in f:
             print(f)
-            os.remove(static_dir + f)
+            os.remove('./media/' + f)
 
 
 # ............................

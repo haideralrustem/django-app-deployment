@@ -22,11 +22,11 @@
 
 
 <script>
-  let plot_url = "{{ plot_url }}";
+  let plot_url = "{% get_media_prefix %}{{ plot_url }}";
 
-let full_plot_url = "/static/images/" + plot_url;
+  let full_plot_url = plot_url;
 
-console.log(full_plot_url)
+console.log('full_plot_url =>', full_plot_url)
 </script>
 
 <div class="project-page-wrapper">
@@ -46,12 +46,12 @@ console.log(full_plot_url)
             <div id='svg-container'>
 
                 <div id="image-preview" class="image-preview dragscroll">
-                    <img id="main_graph">
-                    <script>
+                    <img id="main_graph" src="{{plot_url}}">
+                    <!-- <script>
                       let img = document.getElementById('main_graph');
                       img.src = full_plot_url
                       
-                    </script>
+                    </script> -->
                 </div>
 
                 <div id="bottom-panel-modal" class=''> 

@@ -303,7 +303,8 @@ $('#u_form').submit(function (e) {
             console.log(word_cloud_url)
 
             // ->  Manipulate DOM to show data
-            let prev_src = "/static/images/"+ word_cloud_url  ;
+            let prev_src = "{%get_media_prefix %}"; 
+            prev_src = prev_src + word_cloud_url  ;
             console.log('prev_src = ', prev_src)
 
             imageObject = document.getElementById("cloud_graph");

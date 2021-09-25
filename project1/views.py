@@ -587,6 +587,8 @@ def main_page_viz(request):
 
     plot_url = request.session['plot_url']
 
+
+
     # if chart_type == 'MULTI-LINE-CHART':
     #     y_name = json.dumps(y_name)
 
@@ -618,7 +620,7 @@ def main_page_viz(request):
        
         'BASE_DIR': settings.BASE_DIR,
         'file_path': file_path,
-        'plot_url': plot_url,
+        'plot_url':  plot_url,
         'debug_vars': {
             'json_string_dict': ''
 
