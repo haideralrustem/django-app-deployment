@@ -1093,6 +1093,14 @@ path {
 
 
       @media (min-width: 320px) and (max-width: 480px) { 
+
+        .food-suggester-wrap .file-uploader {
+          width: 68%;
+        }
+
+        #food-button {
+          width: 100%;
+        }
           .modal-innercontent  {
             /* width: 65vw; */
             width: 76vw;
@@ -1278,6 +1286,14 @@ path {
 
 
       @media (min-width: 768px) and (max-width: 1024px) { 
+
+        .food-img-style {
+          width: 38vw;
+          height: auto;
+          margin-left: 1%;
+          margin-top: 5%;
+        }
+
         .modal-innercontent  {
           /* width: 55vw; */
           width: 76vw;
@@ -1348,6 +1364,13 @@ path {
 
 
       @media (min-width: 1024px)  {
+
+        .food-img-style {
+          width: 38vw;
+          height: auto;
+          margin-left: 1%;
+          margin-top: 5%;
+        }
         .modal-innercontent  {
           /* width: 55vw; */
           width: 76vw;
@@ -1410,6 +1433,12 @@ path {
 
       @media (min-width: 1350px)  {
 
+        .food-img-style {
+          width: 36vw;
+          height: auto;
+          margin-left: 1%;
+          margin-top: 5%;
+        }
         .plot-panel-flexible {
           margin-right: 20%;
         }
