@@ -504,12 +504,14 @@ h4.text-gp {
 }
 
 .card-wrap:hover .card-img {
-    width: 95%;
+    /* width: 30%; */
+    width: 20vw;
     height: 100%;
 }
 
 .card-img {
-    width: 90%;
+    /* width: 30% */
+    width: 20vw;
     height: 100%;
     margin-right: 2%;
     transition: width 0.4s, height 0.4s, border 0.4s;
@@ -525,9 +527,16 @@ h4.text-gp {
     /* width: 100%; */
 }
 
-.text-analyzer-card {
-    display: none;
+
+.food_suggester .card-text-content {
+    margin-left: 2%;
 }
+
+/* .analyzer-card {
+    display: none;
+} */
+
+
 
 
 /*....  vertical cards .....*/
