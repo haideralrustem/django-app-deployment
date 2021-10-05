@@ -23,6 +23,7 @@ from datetime import datetime, time, timedelta
 import time
 import string
 import csv
+import main_urls
 # import sys
 # sys.path.append("..")
 # import my_functions
@@ -414,6 +415,7 @@ def generate_plot_get(request):
 
 def food_suggester(request):
     context = {}
+    context['url_context'] = main_urls.url_context
     return render(request, 'project1/food_suggester.html', context)
 
 
@@ -530,7 +532,7 @@ def data_file_upload(request):
                     'finsihed': '1'
                     
                     }
-
+        context['url_context'] = main_urls.url_context
         persistent_data_state['rows'] = rows
         persistent_data_state['strip_headers'] = strip_headers
         persistent_data_state['headers'] = headers
@@ -568,6 +570,7 @@ def data_file_upload(request):
         context = {'uploaded_file': 'no file uploaded yet',
                     'change_dtype_form': change_dtype_form,
                   }
+        context['url_context'] = main_urls.url_context
         return render(request, 'project1/presets_config.html', context)
 
 
@@ -638,6 +641,8 @@ def main_page_viz(request):
         'json_current_dtypes_values': json_current_dtypes_values      
     }
 
+    context['url_context'] = main_urls.url_context
+
     
 
     # return render(request, 'project1/main_page.html', context)
@@ -650,7 +655,7 @@ def main_page_viz(request):
 def intro(request): 
     context = {}
 
-    
+    context['url_context'] = main_urls.url_context
     
     return render(request, 'project1/intro.html', context)
 
@@ -658,5 +663,6 @@ def intro(request):
 # .......................
 
 def testing_page(request):
-        
+    context = {}
+    context['url_context'] = main_urls.url_context  
     return render(request, 'project1/testing_page.html', {})

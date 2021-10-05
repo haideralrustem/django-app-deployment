@@ -20,7 +20,6 @@ import text_classification as tc
 
 
 
-
 # AJAX
 
 def analyze_text(request):
