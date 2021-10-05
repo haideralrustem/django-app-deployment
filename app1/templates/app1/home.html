@@ -47,7 +47,7 @@
 
 
     <div class='card-container analyzer-card'>
-        <a href="http://ec2-13-58-70-58.us-east-2.compute.amazonaws.com/project1/intro">
+        <a href="{{project1_url}}">
         
         <div class="card-wrap">
 
@@ -76,7 +76,7 @@
 
 
     <div class='card-container analyzer-card'>
-        <a href="http://ec2-13-58-70-58.us-east-2.compute.amazonaws.com//project2">
+        <a href="{{project2_url}}">
             <div class="card-wrap">
 
                 <div class="card-img">
@@ -97,7 +97,7 @@
 
 
     <div class='card-container food_suggester'>
-        <a href="{% url 'project1:food_suggester' %}">
+        <a href="{{food_suggester_url}}">
         
         <div class="card-wrap">
 
@@ -136,90 +136,91 @@
 
     <div class="container-vertical">
     
-        <!-- to add a new card, create a row (houses two cards), then put it in .card-wrap-vertical -->
-            
-        <div class="row-vertical">
-            
-            <div class="frame-limiter analyzer-card">
-                <a href="http://ec2-13-58-70-58.us-east-2.compute.amazonaws.com/project1/intro">
-                <div class="card-wrap-vertical hover-border">
-    
-                    <div class="card-img">
-                        <img class="card-img-photo" src="{% static 'images/simple_grapher_thumbnail.png' %}">
-                    </div>
-                    <!-- -->
-                    <div class="card-text-content">
-                        <div class="card-text-title">
-                            <h4><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">Simple</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">GRAPHER</span></h4>
-                        </div>
-                        <hr>
-                        <div class="card-text-body">
-                            <p>  is a tool that lets you generate quick graphs from data.</p>
-                        </div>
-                    </div>
-                    
-                </div>
-    
-                </a>
-            </div>
-    
-    
-            <div class="frame-limiter">
-                <a href="https://haiderapps.herokuapp.com/project1/food_suggester">
-                <div class="card-wrap-vertical hover-border">
-    
-                    <div class="card-img">
-                        <img class="card-img-photo" src="{% static 'images/food_thumbnail_mod.png' %}">
-                    </div>
-                    <!-- -->
-                    <div class="card-text-content">
-                        <div class="card-text-title">
-                            <h4><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">FOOD</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">SUGGESTER</span></h4>
-                        </div>
-    
-                        <hr>
-                        <div class="card-text-body">
-                            <p><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">FOOD</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">SUGGESTER</span>
-                                Useful for when you need quick food ideas and can't decide </p>
-                            
-                        </div>
-                    </div>
-                    
-                </div>
-                </a>
-            </div>
+    <!-- to add a new card, create a row (houses two cards), then put it in .card-wrap-vertical -->
         
-    
-    
-            <div class="frame-limiter analyzer-card">
-    
-                <a href="http://ec2-13-58-70-58.us-east-2.compute.amazonaws.com//project2">
-    
-                <div class="card-wrap-vertical hover-border">
-    
-                    <div class="card-img">
-                        <img class="card-img-photo" src="{% static 'images/text_analysis_thumbnail.png' %}">
-                    </div>
-                    <!-- -->
-                    <div class="card-text-content">
-                        <div class="card-text-title">
-                            <h4><span class="tcard-title-brand">Text Analyzer</span></h4>
-                        </div>
-                        <hr>
-                        <div class="card-text-body">
-                            <p>Generates an analytical summary of any entered text</p>
-                        </div>
-                    </div>
-                    
+    <div class="row-vertical">
+        
+        <div class="frame-limiter analyzer-card">
+            <a href="{{project1_url}}">
+            <div class="card-wrap-vertical hover-border">
+
+                <div class="card-img">
+                    <img class="card-img-photo" src="{% static 'images/simple_grapher_thumbnail.png' %}">
                 </div>
-    
-                </a>
+                <!-- -->
+                <div class="card-text-content">
+                    <div class="card-text-title">
+                        <h4><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">Simple</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">GRAPHER</span></h4>
+                    </div>
+                    <hr>
+                    <div class="card-text-body">
+                        <p>  is a tool that lets you generate quick graphs from data.</p>
+                    </div>
+                </div>
+                
             </div>
-    
-    
+
+            </a>
+        </div>
+
+
+        <div class="frame-limiter">
+            <a href="{{food_suggester_url}}">
+            <div class="card-wrap-vertical hover-border">
+
+                <div class="card-img">
+                    <img class="card-img-photo" src="{% static 'images/food_thumbnail_mod.png' %}">
+                </div>
+                <!-- -->
+                <div class="card-text-content">
+                    <div class="card-text-title">
+                        <h4><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">FOOD</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">SUGGESTER</span></h4>
+                    </div>
+
+                    <hr>
+                    <div class="card-text-body">
+                        <p><span style="font-weight: bold;color: #FF7F0E;font-style: italic;">FOOD</span><span style="font-style: italic; font-weight: bold; color: #1F77B4">SUGGESTER</span>
+                            Useful for when you need quick food ideas and can't decide </p>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            </a>
         </div>
     
+
+
+        <div class="frame-limiter analyzer-card">
+
+            <a href="{{project2_url}}">
+
+            <div class="card-wrap-vertical hover-border">
+
+                <div class="card-img">
+                    <img class="card-img-photo" src="{% static 'images/text_analysis_thumbnail.png' %}">
+                </div>
+                <!-- -->
+                <div class="card-text-content">
+                    <div class="card-text-title">
+                        <h4><span class="tcard-title-brand">Text Analyzer</span></h4>
+                    </div>
+                    <hr>
+                    <div class="card-text-body">
+                        <p>Generates an analytical summary of any entered text</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            </a>
         </div>
+
+
+    </div>
+
+    </div>
+
 
 
 

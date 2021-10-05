@@ -7,7 +7,7 @@
     
     <div class="about-me-card">
         <div class="about-me-pic">
-            <img src="{% static 'images/haider_smile_image2.jpg' %}">
+            <img src="{% get_media_prefix %}haider_smile_image2.jpg">
         </div>
         <div class="about-me-text">
             <p><span></span> My name is Haider AL. 
@@ -57,14 +57,14 @@
             <div class="social-media-panel">
                 <div id="linkedinDiv" class="social-media-pic">
                 <a href="https://www.linkedin.com/in/haider-al-rustem-32010515a/" target="_blank" class="image-wrapper-a">
-                    <img  id="linkedin"  src="{% static 'images/linkedin_fill.png' %}">
+                    <img  id="linkedin"  src="{% get_media_prefix %}linkedin_fill.png">
                 
                 </a>
                 <p class="text-gp social-media-text">Linkedin</p>
                 </div>
                 <div id="facebookDiv" class="social-media-pic">
                 <a href="https://www.facebook.com/hydar.ali.92" target="_blank" class="image-wrapper-a">
-                    <img id="facebook" class="social-media-pic" src="{% static 'images/facebook_fill.png' %}">
+                    <img id="facebook" class="social-media-pic" src="{% get_media_prefix %}facebook_fill.png">
                     
                 </a>
                 <p class="text-gp social-media-text">Facebook</p>
@@ -72,7 +72,7 @@
 
                 <div id="githubDiv" class="social-media-pic">
                     <a  href="https://github.com/haideralrustem" target="_blank" class="image-wrapper-a">
-                        <img id="facebook" class="social-media-pic" src="{% static 'images/github_fill.png' %}">
+                        <img id="facebook" class="social-media-pic" src="{% get_media_prefix %}github_fill.png">
                         
                     </a>
                     <p class="text-gp social-media-text">Github</p>
